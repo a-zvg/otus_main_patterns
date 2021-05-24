@@ -1,0 +1,6 @@
+language: cpp
+dist: bionic
+script:
+  - make -C contrib/
+  - make -C src/
+  - make test -C src/
