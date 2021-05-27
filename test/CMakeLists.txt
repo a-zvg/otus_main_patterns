@@ -1,0 +1,3 @@
+add_executable(command_executor_test command_executor_test.cpp)
+target_link_libraries(command_executor_test ${CONAN_LIBS} Threads::Threads multithreding)
+add_test(NAME command_executor_test COMMAND command_executor_test)
