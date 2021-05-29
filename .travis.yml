@@ -1,6 +1,14 @@
 language: cpp
 dist: bionic
+before_install:
+  - sudo apt-get update -q
+  - sudo apt-get install python3-pip --no-install-recommends -y
+  - python3 -m pip install --upgrade pip setuptools wheel
+  - python3 -m pip install conan
+  - conan profile new default --detect
+  - conan profile update settings.compiler.libcxx=libstdc++11 default
 script:
-  - make -C contrib/
-  - make -C src/
-  - make test -C src/
+  - conan install .
+  - cmake .
+  - cmake --build .
+  - ctest

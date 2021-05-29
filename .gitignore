@@ -1,4 +1,3 @@
 /_build
-/_install
 .clangd
 compile_commands.json

@@ -1,7 +1,0 @@
-boost/optional.hpp
-boost/any.hpp
-boost/preprocessor/iteration/detail/iter/forward1.hpp
-boost/preprocessor/iteration/detail/iter/forward2.hpp
-boost/preprocessor/iteration/detail/iter/forward3.hpp
-boost/preprocessor/iteration/detail/iter/forward4.hpp
-boost/preprocessor/iteration/detail/iter/forward5.hpp
