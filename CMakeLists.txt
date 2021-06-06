@@ -16,8 +16,8 @@ find_package(Threads REQUIRED)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-#file(GLOB SRC "src/*.cpp")
-#add_executable(${PROJECT_NAME} ${SRC})
+#file(GLOB_RECURSE SRC "src/*.cpp")
+#add_library(${PROJECT_NAME} ${SRC})
 #target_link_libraries(${PROJECT_NAME} ${CONAN_LIBS} Threads::Threads)
 include_directories(${CMAKE_SOURCE_DIR}/src)
 

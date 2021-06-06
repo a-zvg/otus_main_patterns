@@ -7,7 +7,7 @@ all: contrib
 	      -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
 	      $(THIS_DIR)
 	cmake --build $(BUILD_DIR) -- -j$(shell nproc)
-	cp $(BUILD_DIR)/compile_commands.json $(THIS_DIR)
+	cp -f $(BUILD_DIR)/compile_commands.json $(THIS_DIR)
 
 contrib: $(BUILD_DIR)/conanbuildinfo.cmake
 
