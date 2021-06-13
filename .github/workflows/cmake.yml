@@ -1,0 +1,35 @@
+name: CMake
+
+on:
+  push:
+    branches:
+    - homework*
+
+env:
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Conan
+      run: |
+        python3 -m pip install --upgrade pip setuptools wheel
+        python3 -m pip install conan
+        conan profile new default --detect
+        conan profile update settings.compiler.libcxx=libstdc++11 default
+
+    - name: Conan install
+      run: cd ${{github.workspace}} && conan install .
+
+    - name: Configure CMake
+      run: cmake -B ${{github.workspace}} -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+
+    - name: Build
+      run: cmake --build ${{github.workspace}} --config ${{env.BUILD_TYPE}}
+
+    - name: Test
+      run: ${{github.workspace}}/bin/command_executor_test
