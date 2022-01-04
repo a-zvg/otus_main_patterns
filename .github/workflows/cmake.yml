@@ -1,0 +1,32 @@
+name: CMake
+
+on:
+  push:
+    branches:
+    - homework*
+
+env:
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Conan
+      run: |
+        python3 -m pip install --upgrade pip setuptools wheel
+        python3 -m pip install conan
+        conan profile new default --detect
+        conan profile update settings.compiler.libcxx=libstdc++11 default
+
+    - name: Configure
+      run: ${{github.workspace}}/configure
+
+    - name: Build
+      run: make -j`nproc`
+
+    - name: Test
+      run: make test
