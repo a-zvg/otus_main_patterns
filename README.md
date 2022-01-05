@@ -12,3 +12,7 @@
 ## Домашнее задание №4 [![Build Status](https://github.com/a-zvg/otus_main_patterns/actions/workflows/cmake.yml/badge.svg?branch=homework-4)](https://github.com/a-zvg/otus_main_patterns/runs/4700471273)
 
 "Макрокоманды" располагается в ветке `homework-4`.
+
+## Домашнее задание №5 [![Build Status](https://github.com/a-zvg/otus_main_patterns/actions/workflows/cmake.yml/badge.svg?branch=homework-5)](https://github.com/a-zvg/otus_main_patterns/runs/4715434914)
+
+"Реализация IoC контейнера" располагается в ветке `homework-5`.
