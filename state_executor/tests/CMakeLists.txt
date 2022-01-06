@@ -1,0 +1,3 @@
+add_executable(state_executor_test state_executor_test.cpp)
+target_link_libraries(state_executor_test state_executor ${GTest_LIBRARIES})
+add_test(NAME state_executor_test COMMAND state_executor_test)

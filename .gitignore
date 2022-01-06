@@ -1,0 +1,7 @@
+/_build
+/.vs
+/out
+.clangd
+.cache
+Makefile
+compile_commands.json
