@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(macro_command VERSION 0.1)
+project(ioc VERSION 0.1)
 
 if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)

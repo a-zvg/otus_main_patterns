@@ -1,4 +1,4 @@
 file(GLOB SRC src/*.cpp)
-add_library(ioc STATIC ${SRC})
+add_library(${PROJECT_NAME} STATIC ${SRC})
 
 add_subdirectory(tests)

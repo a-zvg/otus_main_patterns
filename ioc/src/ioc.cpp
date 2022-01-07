@@ -1,4 +1,4 @@
-#include <ioc/src/ioc.h>
+#include <ioc/ioc.h>
 
 std::map< std::string, boost::any > IoC::rootContainer_;
 thread_local std::map< std::string, IoC::Container > IoC::scopes_;
