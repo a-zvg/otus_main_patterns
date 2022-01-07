@@ -16,3 +16,7 @@
 ## Домашнее задание №5 [![Build Status](https://github.com/a-zvg/otus_main_patterns/actions/workflows/cmake.yml/badge.svg?branch=homework-5)](https://github.com/a-zvg/otus_main_patterns/runs/4715434914)
 
 "Реализация IoC контейнера" располагается в ветке [`homework-5`](https://github.com/a-zvg/otus_main_patterns/tree/homework-5).
+
+## Домашнее задание №7 [![Build Status](https://github.com/a-zvg/otus_main_patterns/actions/workflows/cmake.yml/badge.svg?branch=homework-7)](https://github.com/a-zvg/otus_main_patterns/runs/4736235653)
+
+"Смена режимов обработки команд" располагается в ветке [`homework-7`](https://github.com/a-zvg/otus_main_patterns/tree/homework-7).
