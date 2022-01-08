@@ -9,6 +9,9 @@
 
 "Многопоточное выполнение команд" располагается в ветке [`homework-2`](https://github.com/a-zvg/otus_main_patterns/tree/homework-2).
 
+## Домашнее задание №3
+"Создание модели любого процесса в нотациях EPC или BPMN" располагается в ветке [`homework-3`](https://github.com/a-zvg/otus_main_patterns/tree/homework-3).
+
 ## Домашнее задание №4 [![Build Status](https://github.com/a-zvg/otus_main_patterns/actions/workflows/cmake.yml/badge.svg?branch=homework-4)](https://github.com/a-zvg/otus_main_patterns/runs/4700471273)
 
 "Макрокоманды" располагается в ветке [`homework-4`](https://github.com/a-zvg/otus_main_patterns/tree/homework-4).
