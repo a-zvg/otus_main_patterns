@@ -1,0 +1,43 @@
+#!/bin/bash
+
+set -e
+
+THIS_DIR=$(dirname "$(realpath -s "$0")")
+BUILD_DIR="$THIS_DIR/_build"
+BUILD_TYPE=Release
+
+help()
+{
+    cat <<EOF
+Configuration:
+  --enable-debug  enable debug build
+EOF
+}
+
+# обработка аргументов
+if [ "$1" = "--enable-debug" ]; then
+    BUILD_TYPE=Debug
+elif [ ! -z "$1" ]; then
+    help
+    exit
+fi
+
+# создание Makefile
+cat <<EOF >Makefile
+BUILD_DIR:=$THIS_DIR/_build
+
+.PHONY: test clean
+
+all: \$(BUILD_DIR)/Makefile
+	\$(MAKE) -C \$(BUILD_DIR)
+
+\$(BUILD_DIR)/Makefile: CMakeLists.txt | \$(BUILD_DIR)
+	cd \$(BUILD_DIR) && \\
+	cmake -DCMAKE_BUILD_TYPE=$BUILD_TYPE ..
+
+\$(BUILD_DIR):
+	mkdir -p \$(BUILD_DIR)
+
+test clean:
+	\$(MAKE) \$(MAKECMDGOALS) -C \$(BUILD_DIR)
+EOF
