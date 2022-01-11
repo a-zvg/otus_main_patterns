@@ -23,3 +23,7 @@
 ## Домашнее задание №7 [![Build Status](https://github.com/a-zvg/otus_main_patterns/actions/workflows/cmake.yml/badge.svg?branch=homework-7)](https://github.com/a-zvg/otus_main_patterns/runs/4736235653)
 
 "Смена режимов обработки команд" располагается в ветке [`homework-7`](https://github.com/a-zvg/otus_main_patterns/tree/homework-7).
+
+## Домашнее задание №8 [![Build Status](https://github.com/a-zvg/otus_main_patterns/actions/workflows/cmake.yml/badge.svg?branch=homework-8)](https://github.com/a-zvg/otus_main_patterns/runs/4780893808)
+
+"Инициализация игры" располагается в ветке [`homework-8`](https://github.com/a-zvg/otus_main_patterns/tree/homework-8).
